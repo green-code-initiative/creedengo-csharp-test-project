@@ -11,18 +11,18 @@ internal static class DontConcatenateStringsInLoops
         for (int i = 0; i < 10; i++)
         {
             string si = $"{i}";
-            sParam += si; // EC75
-            sParam = sParam + si; // EC75
-            sParam = si + sParam; // EC75
+            sParam += si; // GCI75
+            sParam = sParam + si; // GCI75
+            sParam = si + sParam; // GCI75
             sParam = si + si;
         }
 
         foreach (int i in Enumerable.Range(0, 10))
         {
             string si = $"{i}";
-            sParam += si; // EC75
-            sParam = sParam + si; // EC75
-            sParam = si + sParam; // EC75
+            sParam += si; // GCI75
+            sParam = sParam + si; // GCI75
+            sParam = si + sParam; // GCI75
             sParam = si + si;
         }
 
@@ -30,9 +30,9 @@ internal static class DontConcatenateStringsInLoops
         while (i2++ < 10)
         {
             string si = $"{i2}";
-            sParam += si; // EC75
-            sParam = sParam + si; // EC75
-            sParam = si + sParam; // EC75
+            sParam += si; // GCI75
+            sParam = sParam + si; // GCI75
+            sParam = si + sParam; // GCI75
             sParam = si + si;
         }
 
@@ -40,9 +40,9 @@ internal static class DontConcatenateStringsInLoops
         do
         {
             string si = $"{i2}";
-            sParam += si; // EC75
-            sParam = sParam + si; // EC75
-            sParam = si + sParam; // EC75
+            sParam += si; // GCI75
+            sParam = sParam + si; // GCI75
+            sParam = si + sParam; // GCI75
             sParam = si + si;
         } while (++i2 < 10);
     }
@@ -54,9 +54,9 @@ internal static class DontConcatenateStringsInLoops
         for (int i = 0; i < 10; i++)
         {
             string si = $"{i}";
-            sField += si; // EC75
-            sField = sField + si; // EC75
-            sField = si + sField; // EC75
+            sField += si; // GCI75
+            sField = sField + si; // GCI75
+            sField = si + sField; // GCI75
             sField = si + si;
         }
     }
@@ -67,9 +67,9 @@ internal static class DontConcatenateStringsInLoops
         for (int i = 0; i < 10; i++)
         {
             string si = $"{i}";
-            sProp += si; // EC75
-            sProp = sProp + si; // EC75
-            sProp = si + sProp; // EC75
+            sProp += si; // GCI75
+            sProp = sProp + si; // GCI75
+            sProp = si + sProp; // GCI75
             sProp = si + si;
         }
     }
@@ -80,9 +80,9 @@ internal static class DontConcatenateStringsInLoops
         for (int i = 0; i < 10; i++)
         {
             string si = $"{i}";
-            sLocal += si; // EC75
-            sLocal = sLocal + si; // EC75
-            sLocal = si + sLocal; // EC75
+            sLocal += si; // GCI75
+            sLocal = sLocal + si; // GCI75
+            sLocal = si + sLocal; // GCI75
             sLocal = si + si;
 
             string sLocalInLoop = string.Empty;
@@ -105,26 +105,26 @@ internal static class DontConcatenateStringsInLoops
         Array.ForEach(arr, i =>
         {
             string si = $"{i}";
-            sLocal += si; // EC75
-            sLocal = sLocal + si; // EC75
-            sLocal = si + sLocal; // EC75
+            sLocal += si; // GCI75
+            sLocal = sLocal + si; // GCI75
+            sLocal = si + sLocal; // GCI75
             sLocal = si + si;
         });
-        Array.ForEach(arr, i => sLocal += $"{i}"); // EC75
-        Array.ForEach(arr, i => sLocal = sLocal + $"{i}"); // EC75
-        Array.ForEach(arr, i => sLocal = $"{i}" + sLocal); // EC75
+        Array.ForEach(arr, i => sLocal += $"{i}"); // GCI75
+        Array.ForEach(arr, i => sLocal = sLocal + $"{i}"); // GCI75
+        Array.ForEach(arr, i => sLocal = $"{i}" + sLocal); // GCI75
         Array.ForEach(arr, i => sLocal = $"{i}" + $"{i}");
 
         var list = new List<T>();
         list.ForEach(i =>
         {
             string si = $"{i}";
-            sLocal += si; // EC75
-            sLocal = sLocal + si; // EC75
-            sLocal = si + sLocal; // EC75
+            sLocal += si; // GCI75
+            sLocal = sLocal + si; // GCI75
+            sLocal = si + sLocal; // GCI75
             sLocal = si + si;
         });
-        list.ForEach(i => sLocal += $"{i}"); // EC75
+        list.ForEach(i => sLocal += $"{i}"); // GCI75
         list.ForEach(i => sLocal = sLocal + $"{i}"); // EC75
         list.ForEach(i => sLocal = $"{i}" + sLocal); // EC75
         list.ForEach(i => sLocal = $"{i}" + $"{i}");

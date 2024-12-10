@@ -13,7 +13,7 @@ internal static class DontCallFunctionsInLoopConditions
     {
         int i, j = 0, k = 10;
 
-        // EC69 on V2(), V3(k), V3(p) and V3(C)
+        // GCI69 on V2(), V3(k), V3(p) and V3(C)
 
         for (i = 0; i < V1 && i < V2() && i < V3(i) && i < V3(j) && i < V3(k) && i < V3(p) && i < V3(C); i++)
             j += i;
@@ -25,7 +25,7 @@ internal static class DontCallFunctionsInLoopConditions
         while (i < V1 && i < V2() && i < V3(i) && i < V3(j) && i < V3(k) && i < V3(p) && i < V3(C));
 
         string? d = Path.GetDirectoryName("toto");
-        while (d != null && !d.Equals(@"S:\", StringComparison.OrdinalIgnoreCase)) // No EC69, d is reassigned in the loop
+        while (d != null && !d.Equals(@"S:\", StringComparison.OrdinalIgnoreCase)) // No GCI69, d is reassigned in the loop
             d = Path.GetDirectoryName(d);
     }
 }

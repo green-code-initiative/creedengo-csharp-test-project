@@ -20,23 +20,23 @@ internal static class UseListIndexer
 
     public static void Run()
     {
-        Console.WriteLine(Arr.First()); // EC87
+        Console.WriteLine(Arr.First()); // GCI87
         Console.WriteLine(Arr.First(x => x != 1));
-        Console.WriteLine(Arr.Last()); // EC87
+        Console.WriteLine(Arr.Last()); // GCI87
         Console.WriteLine(Arr.Last(x => x != 1));
-        Console.WriteLine(Arr.ElementAt(2)); // EC87
+        Console.WriteLine(Arr.ElementAt(2)); // GCI87
 
-        Console.WriteLine(List.First()); // EC87
+        Console.WriteLine(List.First()); // GCI87
         Console.WriteLine(List.First(x => x != 1));
-        Console.WriteLine(List.Last()); // EC87
+        Console.WriteLine(List.Last()); // GCI87
         Console.WriteLine(List.Last(x => x != 1));
-        Console.WriteLine(List.ElementAt(2)); // EC87
+        Console.WriteLine(List.ElementAt(2)); // GCI87
 
-        Console.WriteLine(Coll1.First()); // EC87
+        Console.WriteLine(Coll1.First()); // GCI87
         Console.WriteLine(Coll1.First(x => x != 1));
-        Console.WriteLine(Coll1.Last()); // EC87
+        Console.WriteLine(Coll1.Last()); // GCI87
         Console.WriteLine(Coll1.Last(x => x != 1));
-        Console.WriteLine(Coll1.ElementAt(2)); // EC87
+        Console.WriteLine(Coll1.ElementAt(2)); // GCI87
 
         Console.WriteLine(Coll2.First());
         Console.WriteLine(Coll2.First(x => x != 1));
