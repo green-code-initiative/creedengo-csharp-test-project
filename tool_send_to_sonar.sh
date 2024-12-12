@@ -6,7 +6,7 @@ then
     exit 1
 fi
 
-PROJECT_KEY=ecoCode-csharp-test-project
+PROJECT_KEY=creedengo-csharp-test-project
 SONAR_TOKEN=$1
 
 dotnet sonarscanner begin /k:"$PROJECT_KEY" /d:sonar.host.url="http://localhost:9000"  /d:sonar.login="$SONAR_TOKEN"

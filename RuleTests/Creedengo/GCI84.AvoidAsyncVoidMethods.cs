@@ -1,6 +1,6 @@
 ﻿using System.Net.Http;
 
-namespace RuleTests.EcoCode;
+namespace RuleTests.Creedengo;
 
 internal static class AvoidAsyncVoidMethods
 {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Immutable;
 
-namespace RuleTests.EcoCode;
+namespace RuleTests.Creedengo;
 
 internal static class DontConcatenateStringsInLoops
 {

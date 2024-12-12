@@ -1,6 +1,6 @@
 ﻿using System.Data;
 
-namespace RuleTests.EcoCode;
+namespace RuleTests.Creedengo;
 
 internal static class DontExecuteSqlCommandsInLoops
 {

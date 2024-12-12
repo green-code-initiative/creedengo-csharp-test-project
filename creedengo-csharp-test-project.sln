@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ecoCode-csharp-test-project", "ecoCode-csharp-test-project.csproj", "{6AAA1AD9-DC43-4F33-898A-663C42B06DCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "creedengo-csharp-test-project", "creedengo-csharp-test-project.csproj", "{6AAA1AD9-DC43-4F33-898A-663C42B06DCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

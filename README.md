@@ -1,9 +1,9 @@
-﻿A project that can be used to test the latest version of the [ecoCode-charp](https://github.com/green-code-initiative/ecoCode-charp) NuGet package.
+﻿A project that can be used to test the latest version of the [creedengo-charp](https://github.com/green-code-initiative/creedengo-charp) NuGet package.
 
 ### 1. Set up your local environment
 
-- Install/update the .NET SDK on your machine, the minimum required version is specified in the ecoCode-charp's [global.json](https://github.com/green-code-initiative/ecoCode-csharp/blob/main/global.json) file.
-- Clone this repository locally on your machine. Since this project is used to test the very latest ecoCode-csharp rules, including the beta versions, it is recommended to check it out often.
+- Install/update the .NET SDK on your machine, the minimum required version is specified in the creedengo-charp's [global.json](https://github.com/green-code-initiative/creedengo-csharp/blob/main/global.json) file.
+- Clone this repository locally on your machine. Since this project is used to test the very latest creedengo-csharp rules, including the beta versions, it is recommended to check it out often.
 - Optional : install the IDE of your choice for C# (e.g. Visual Studio, Visual Studio Code, Rider, etc.) if you want to test with a GUI.
 
 ### 2. Test the rules through the CLI

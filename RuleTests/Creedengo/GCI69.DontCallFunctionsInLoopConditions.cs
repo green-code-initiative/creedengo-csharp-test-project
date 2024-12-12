@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace RuleTests.EcoCode;
+namespace RuleTests.Creedengo;
 
 internal static class DontCallFunctionsInLoopConditions
 {
