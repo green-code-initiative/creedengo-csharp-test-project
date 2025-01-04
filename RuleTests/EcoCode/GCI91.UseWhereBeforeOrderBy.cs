@@ -7,7 +7,7 @@ internal static class UseWhereBeforeOrderBy
         var items = new List<int>();
         var query = items
             .OrderBy(x => x)
-            .Where(x => x > 10) // EC91
+            .Where(x => x > 10) // GCI91
             .Select(x => x);
     }
 
@@ -16,7 +16,7 @@ internal static class UseWhereBeforeOrderBy
         var items = new List<int>();
         var query = items
             .OrderByDescending(x => x)
-            .Where(x => x > 10) // EC91
+            .Where(x => x > 10) // GCI91
             .Select(x => x);
     }
 
@@ -25,7 +25,7 @@ internal static class UseWhereBeforeOrderBy
         var items = new List<int>();
         var query = from item in items
                     orderby item
-                    where item > 10 // EC91
+                    where item > 10 // GCI91
                     select item;
     }
 
@@ -34,7 +34,7 @@ internal static class UseWhereBeforeOrderBy
         var items = new List<int>();
         var query = from item in items
                     orderby item descending
-                    where item > 10 // EC91
+                    where item > 10 // GCI91
                     select item;
     }
 }

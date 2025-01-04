@@ -4,7 +4,7 @@ internal static class VariableCanBeMadeConstant
 {
     public static void Run()
     {
-        int i0 = 0; // EC82, code fix: const int i0 = 0;
+        int i0 = 0; // GCI82, code fix: const int i0 = 0;
         Console.WriteLine(i0);
 
         int i1 = 0;
@@ -24,20 +24,20 @@ internal static class VariableCanBeMadeConstant
         Console.WriteLine(i5);
         Console.WriteLine(i6);
 
-        int i7 = 0, i8 = 0; // EC82, code fix: const int i7 = 0, i8 = 0;
+        int i7 = 0, i8 = 0; // GCI82, code fix: const int i7 = 0, i8 = 0;
         Console.WriteLine(i7);
         Console.WriteLine(i8);
 
         object o = "abc";
         Console.WriteLine(o);
 
-        string s = "abc"; // EC82, code fix: const string s = "abc";
+        string s = "abc"; // GCI82, code fix: const string s = "abc";
         Console.WriteLine(s);
 
-        var v0 = 4; // EC82, code fix: const int item = 4;
+        var v0 = 4; // GCI82, code fix: const int item = 4;
         Console.WriteLine(v0);
 
-        var v1 = "abc"; // EC82, code fix: const string item = "abc";
+        var v1 = "abc"; // GCI82, code fix: const string item = "abc";
         Console.WriteLine(v1);
     }
 }

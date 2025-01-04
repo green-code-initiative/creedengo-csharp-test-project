@@ -22,14 +22,3 @@ Global
 		SolutionGuid = {E0DE71DC-90CB-4025-A57B-2F705B187C22}
 	EndGlobalSection
 EndGlobal
-d.0 = Debug|Any CPU
-		{6AAA1AD9-DC43-4F33-898A-663C42B06DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6AAA1AD9-DC43-4F33-898A-663C42B06DCA}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E0DE71DC-90CB-4025-A57B-2F705B187C22}
-	EndGlobalSection
-EndGlobal

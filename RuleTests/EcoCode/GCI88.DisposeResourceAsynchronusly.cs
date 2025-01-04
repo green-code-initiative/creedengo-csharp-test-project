@@ -31,10 +31,10 @@ internal static class DisposeResourceAsynchronusly
         Console.WriteLine(d12);
 
         // Warn on asyncable usings
-        using (var d21 = new AsyncDisposableClass()) // EC88 : Dispose resource asynchronously
+        using (var d21 = new AsyncDisposableClass()) // GCI88 : Dispose resource asynchronously
             Console.WriteLine(d21);
 
-        using var d22 = new AsyncDisposableClass(); // EC88 : Dispose resource asynchronously
+        using var d22 = new AsyncDisposableClass(); // GCI88 : Dispose resource asynchronously
         Console.WriteLine(d22);
         await Task.CompletedTask.ConfigureAwait(false);
 
