@@ -3,10 +3,10 @@
 	<PropertyGroup>
 		<Authors>Green Code Initiative</Authors>
 		<Company>Green Code Initiative</Company>
-		<Description>A project that contains code with warnings that should be raised by the EcoCode analyzers.</Description>
-		<Copyright>Copyright EcoCode © 2024</Copyright>
+		<Description>A project that contains code with warnings that should be raised by the Creedengo analyzers.</Description>
+		<Copyright>Copyright Green Code Initiative © 2024-2025</Copyright>
 
-		<TargetFramework>net8.0</TargetFramework>
+		<TargetFramework>net9.0</TargetFramework>
 		<LangVersion>latest</LangVersion>
 		<Nullable>enable</Nullable>
 
@@ -15,7 +15,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="EcoCode" Version="1.5.1" />
+	  <PackageReference Include="EcoCode" Version="1.5.3" />
 	</ItemGroup>
 
 </Project>

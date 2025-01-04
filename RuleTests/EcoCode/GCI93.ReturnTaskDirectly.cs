@@ -24,18 +24,18 @@ internal static class ReturnTaskDirectly
         await Task.Delay(0).ConfigureAwait(false);
     }
 
-    public static async Task WarnOnSingleAwaitExpressionAsync() => // EC93
+    public static async Task WarnOnSingleAwaitExpressionAsync() => // GCI93
         // Comment
         await Task.Delay(0).ConfigureAwait(false);
 
-    public static async Task WarnOnSingleAwaitBody1Async() // EC93
+    public static async Task WarnOnSingleAwaitBody1Async() // GCI93
     {
         // Comment 0
         await Task.Delay(0).ConfigureAwait(false); // Comment 1
         // Comment 2
     }
 
-    public static async Task<int> WarnOnSingleAwaitBody2Async() // EC93
+    public static async Task<int> WarnOnSingleAwaitBody2Async() // GCI93
     {
         // Comment 0
         return await Task.FromResult(0).ConfigureAwait(false); // Comment 1
