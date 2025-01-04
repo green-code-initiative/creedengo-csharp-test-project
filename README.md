@@ -1,4 +1,4 @@
-﻿A project that can be used to test the latest version of the [creedengo-charp](https://github.com/green-code-initiative/creedengo-charp) NuGet package.
+﻿A project that can be used to test the latest version of the [creedengo-charp](https://github.com/green-code-initiative/creedengo-csharp) NuGet package.
 
 ### 1. Set up your local environment
 
