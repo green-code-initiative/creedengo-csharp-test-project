@@ -1,4 +1,4 @@
-﻿namespace RuleTests.EcoCode;
+﻿namespace RuleTests.Creedengo;
 
 // Because GCI85 is a compiler warning, it can't appear live in the editor.
 // It can appear in the Error List after a compilation or after using 'Run Code Analysis',
