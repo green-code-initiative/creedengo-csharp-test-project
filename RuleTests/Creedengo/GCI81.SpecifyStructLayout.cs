@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace RuleTests.EcoCode;
+namespace RuleTests.Creedengo;
 
 internal static class SpecifyStructLayout
 {

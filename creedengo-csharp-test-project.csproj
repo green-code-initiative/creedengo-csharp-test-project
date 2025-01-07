@@ -15,7 +15,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="EcoCode" Version="1.5.3" />
+	  <PackageReference Include="Creedengo" Version="2.0.0" />
 	</ItemGroup>
 
 </Project>
